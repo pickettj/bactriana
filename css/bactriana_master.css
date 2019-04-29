@@ -1,0 +1,88 @@
+body {
+
+font-family: 'Yrsa', serif;
+background: #f9ffe6;
+    
+    
+}
+
+
+nav {
+
+font-family: 'Cinzel', serif;
+margin: auto;
+width: 500px;
+border: 2px solid #555;
+text-align: center; 
+padding: 8px;
+background: #e6e6cc;
+
+    
+}
+
+a:link {color: #974b00;}
+
+a:visited {color: #1a3300;}
+
+.clear {
+  clear: both;
+}
+
+
+h1 {
+
+font-family: 'Cinzel', serif;
+font-weight: bold; 
+text-align: center;
+color: #444422;
+background: #e0e0d1;
+margin: 3% auto; 
+padding: 10px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+text-transform: uppercase; 
+
+
+}
+
+
+h2 {
+  
+    font-family: 'Cinzel', serif;
+    padding: 5px;
+    margin-left: 4%;
+    padding-bottom: 25px;
+
+}
+
+h3 {
+  
+    font-family: 'Cinzel', serif;
+    padding: 2px;
+    margin-left: 4%;
+    border-bottom: 1px solid black;
+
+}
+
+
+span {
+    
+    font-weight: bold;
+    color: green;
+    
+}
+
+main {
+    
+    
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+ 
+}
+
