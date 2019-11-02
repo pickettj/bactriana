@@ -2,10 +2,14 @@ body {
 
 font-family: 'Yrsa', serif;
 background: #f9ffe6;
-    
-    
+margin-left: 4%;
+font-size: 110%;
+
+
 }
 
+
+/* Nav Bar */
 
 nav {
 
@@ -13,11 +17,16 @@ font-family: 'Cinzel', serif;
 margin: auto;
 width: 500px;
 border: 2px solid #555;
-text-align: center; 
+text-align: center;
 padding: 8px;
 background: #e6e6cc;
 
-    
+
+}
+
+.nav {
+
+    margin-right: 10px;
 }
 
 a:link {color: #974b00;}
@@ -29,25 +38,28 @@ a:visited {color: #1a3300;}
 }
 
 
+/* Headers */
+
+
 h1 {
 
 font-family: 'Cinzel', serif;
-font-weight: bold; 
+font-weight: bold;
 text-align: center;
 color: #444422;
 background: #e0e0d1;
-margin: 3% auto; 
+margin: 3% auto;
 padding: 10px;
 border-top: 2px solid black;
 border-bottom: 2px solid black;
-text-transform: uppercase; 
-
+text-transform: uppercase;
+font-size: 2.5rem;
 
 }
 
 
 h2 {
-  
+
     font-family: 'Cinzel', serif;
     padding: 5px;
     margin-left: 4%;
@@ -56,25 +68,26 @@ h2 {
 }
 
 h3 {
-  
+
     font-family: 'Cinzel', serif;
     padding: 2px;
     margin-left: 4%;
     border-bottom: 1px solid black;
+    margin-top: 4%;
 
 }
 
 
 span {
-    
+
     font-weight: bold;
     color: green;
-    
+
 }
 
 main {
-    
-    
+
+
 }
 
 
@@ -83,6 +96,27 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
- 
+
 }
 
+p {
+  padding: 2px;
+  margin-left: 4%;
+  margin-right: 2%;
+  line-height: 1.5;
+}
+
+div.toc {
+
+  margin-left: 4%;
+  padding: 20px;
+  line-height: 2.5;
+
+
+  background: url("../images/photographs/samarkand_mosaic_toc.png");
+  background-position: left top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
