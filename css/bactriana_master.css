@@ -1,6 +1,36 @@
+
+
+/*
+
+Sans Serif Google fonts
+
+
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Calistoga', cursive;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Noto Sans SC', sans-serif;
+font-family: 'Assistant', sans-serif;
+font-family: 'Public Sans', sans-serif;
+font-family: 'Asap Condensed', sans-serif;
+font-family: 'Archivo', sans-serif;
+font-family: 'Amaranth', sans-serif;
+
+*/
+
+
+
+head {
+  font-family: 'Assistant', sans-serif;
+}
+
 body {
 
-font-family: 'Yrsa', serif;
+/*font-family: 'Yrsa', serif;*/
+font-family: 'Assistant', sans-serif;
 background: #f9ffe6;
 margin-left: 4%;
 font-size: 110%;
@@ -13,21 +43,18 @@ font-size: 110%;
 
 nav {
 
-font-family: 'Cinzel', serif;
+/*font-family: 'Cinzel', serif;*/
+font-size: 115%;
+font-variant: small-caps;
 margin: auto;
 width: 500px;
 border: 2px solid #555;
 text-align: center;
-padding: 8px;
+padding: 10px;
 background: #e6e6cc;
-
-
 }
 
-.nav {
 
-    margin-right: 10px;
-}
 
 a:link {color: #974b00;}
 
@@ -43,7 +70,6 @@ a:visited {color: #1a3300;}
 
 h1 {
 
-font-family: 'Cinzel', serif;
 font-weight: bold;
 text-align: center;
 color: #444422;
@@ -60,7 +86,6 @@ font-size: 2.5rem;
 
 h2 {
 
-    font-family: 'Cinzel', serif;
     padding: 5px;
     margin-left: 4%;
     padding-bottom: 25px;
@@ -69,7 +94,6 @@ h2 {
 
 h3 {
 
-    font-family: 'Cinzel', serif;
     padding: 2px;
     margin-left: 4%;
     border-bottom: 1px solid black;

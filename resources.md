@@ -1,14 +1,37 @@
 
+For more extensive links to digital humanities resources (especially for XML-related technologies), see [Obdurodon][1] and [Newtfire][2].
+
+### DH Courses and Opportunities at Pitt
+
+- [Digital Atlas Internship][3] (World History Center)
+- [Computational Linguistics Courses][4] (Na-Rae Han) 
+- [Graduate Certificate in Digital Studies & Methods][5] (and [associated courses][6])
+
+### Productivity Tools and Workflow
+
+- [James Pickett’s dotfiles][7]: Customization, workflow, syncing between machines, etc.
 
 
+### Databases
 
-## Databases
-
-- [OCHRE Data Service](https://voices.uchicago.edu/ochre/) (U. Chicago): A graph database (i.e. not a relational / table database) targeted at humanists and social scientists.
-  - [Guides to using OCHRE](https://voices.uchicago.edu/ochre/publications/)
+- [OCHRE Data Service][8] (U. Chicago): A graph database (i.e. not a relational / table database) targeted at humanists and social scientists.
+	  - [Guides to using OCHRE][9]
 
 
-## Digital Islamic Studies
+### Digital Islamic Studies
 
-- [Open Islamicate Texts Initiative](http://kitab-project.org/2019/11/04/a-new-application-that-helps-you-find-texts-in-the-openiti-corpus/) (OpenITI) is the corpus reader for digital texts (mostly in Arabic, but not exclusively, and growing) assembled by the [Kitab project](http://kitab-project.org/about/).
-  - Raw texts [available on Github](https://github.com/OpenITI).
+- [Open Islamicate Texts Initiative][10] (OpenITI) is the corpus reader for digital texts (mostly in Arabic, but not exclusively, and growing) assembled by the [Kitab project][11].
+  - Raw texts [available on Github][12].
+
+[1]:	http://dh.obdurodon.org/
+[2]:	https://newtfire.org/courses/dh/index.html
+[3]:	https://www.worldhistory.pitt.edu/digital-atlas-design-internship
+[4]:	http://www.pitt.edu/~naraehan/
+[5]:	https://www.dsam.pitt.edu/about
+[6]:	https://www.dsam.pitt.edu/courses
+[7]:	https://github.com/pickettj/dot_files
+[8]:	https://voices.uchicago.edu/ochre/
+[9]:	https://voices.uchicago.edu/ochre/publications/
+[10]:	http://kitab-project.org/2019/11/04/a-new-application-that-helps-you-find-texts-in-the-openiti-corpus/
+[11]:	http://kitab-project.org/about/
+[12]:	https://github.com/OpenITI
