@@ -22,6 +22,7 @@ For more extensive links to digital humanities resources (especially for XML-rel
 
 - [Open Islamicate Texts Initiative][10] (OpenITI) is the corpus reader for digital texts (mostly in Arabic, but not exclusively, and growing) assembled by the [Kitab project][11].
 	  - Raw texts [available on Github][12].
+- [Right-To-Left Text in Markup Languages](http://www.i18nguy.com/markup/right-to-left.html) (e.g. Arabic script in HTML)
 
 [1]:	http://dh.obdurodon.org/
 [2]:	https://newtfire.org/courses/dh/index.html
