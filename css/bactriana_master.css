@@ -123,6 +123,13 @@ img {
 
 }
 
+img.map {
+
+  width: 50%;
+  height: auto;
+
+}
+
 p {
   padding: 2px;
   margin-left: 4%;
