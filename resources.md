@@ -14,6 +14,7 @@ For more extensive links to digital humanities resources (especially for XML-rel
 
 ### Databases
 
+- [Datasette](https://datasette.readthedocs.io/en/stable/): Tool for sharing SQLite data.
 - [OCHRE Data Service][8] (U. Chicago): A graph database (i.e. not a relational / table database) targeted at humanists and social scientists.
 	  - [Guides to using OCHRE][9]
 
