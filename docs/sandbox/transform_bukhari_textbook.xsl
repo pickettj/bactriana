@@ -15,6 +15,7 @@
         <html>
             <head>
                 <title>The Sandbox</title>
+                <link rel="stylesheet" href="./bukhari_textbook.css"/>
             </head>
             <body>
                 <h1>Bukhari Chancery Persian Textbook Development</h1>
