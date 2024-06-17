@@ -26,3 +26,17 @@ section {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+
+div.exsec {
+    
+    border-style: dotted;
+    padding: 20px;
+    
+}
+
+
+span.gram_emph {
+        
+        color: #8B0000
+}

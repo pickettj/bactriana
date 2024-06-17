@@ -56,14 +56,34 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="ex/*">
+    <xsl:template match="ex/*[not(self::gloss)]">
         <div class = "{name()}">
             <p>
                 <xsl:apply-templates/>
             </p>
         </div>
     </xsl:template>
-
+    
+    <xsl:template match="gloss">
+        <div class = "gloss">
+            Comments:
+            <ul>
+                <xsl:apply-templates/>
+            </ul>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="div">
+        <li>
+            <xsl:apply-templates/>
+        </li>
+    </xsl:template>
+    
+    <xsl:template match="em">
+        <span class = "gram_emph">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
 
 <!-- References Section -->
     
