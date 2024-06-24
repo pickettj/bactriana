@@ -59,6 +59,7 @@
     <xsl:template match="ex/*[not(self::gloss)]">
         <div class = "{name()}">
             <p>
+                <xsl:value-of select="name()"/><xsl:text>: </xsl:text>
                 <xsl:apply-templates/>
             </p>
         </div>
