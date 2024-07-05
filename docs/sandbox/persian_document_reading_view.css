@@ -1,0 +1,258 @@
+/* CSS earth tone color codes: http://www.varian.net/dreamview/dreamcolor/earth.html*/
+
+body {
+    display:inline-block;
+    background-color: #e0e0d1;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 2%;
+    color: #060202;
+    font-family: 'Scheherazade', serif;
+    font-size: 40px;
+    overflow: auto;
+    opacity: 0.90;
+}
+
+h2 {
+
+    font-family: 'Yrsa', serif;
+    padding: 5px;
+    margin-left: 4%;
+    padding-bottom: 25px;
+    margin: 3% auto;
+    padding: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: #DBA901;
+    text-indent: 20px;
+
+}
+
+h3{
+    border-bottom: 1px solid grey;
+}
+
+h4{
+  /* Diplomatic Section Headings */
+  text-transform: capitalize;
+  padding: 0px;
+  margin: 0px
+}
+
+h5{
+  /* Thematic Section Headings */
+  text-decoration: underline;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+
+/* List Styling */
+
+li{
+  list-style: none;
+}
+
+
+/* Table Styling */
+
+table, th, td {
+  border: 2px solid black;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th{
+  padding: 15px;
+  background-color: #F0B27A;
+
+}
+
+tr{
+  vertical-align: middle;
+}
+
+td{
+  vertical-align: top;
+  background-color: #E6F8E0;
+}
+
+
+/* Section Formatting */
+
+
+.section {
+   text-align: right;
+   background-color: #C0A27F;
+   padding: 40px;
+   margin-bottom: 30px;
+}
+
+.numeration {
+  float: left;
+}
+
+
+
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+div.meta {
+    opacity: .75;
+    padding: 25px;
+    height: auto;
+
+}
+
+
+
+/* Flags for Deciphering / Troubleshooting Formatting */
+
+.flag {
+    color: #802b00;
+    text-shadow: 2px 2px 8px #8B3E2F;
+}
+
+/* Color-coding substantive information */
+
+
+.location {
+    color: #356045;
+}
+
+.individual {
+    color: #325C74;
+}
+
+/* visually flags that text is interpolated from a top-page reference */
+.interpolated_individual{
+    border:2px dashed #DBA901;  
+    padding:0.03em 0.25em;
+}
+
+
+/* Dropdown Formatting */
+
+span.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+span.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    /*  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+span.dropdown:hover span.dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+.comment {
+    color: red;
+}
+.ind, .int {
+    color: blue;
+}
+.loc {
+    color: green;
+}
+.date {
+    text-decoration: underline;
+}
+
+
+/* Drop Down Formatting */
+
+/* HTML for the glossed text: <span class = "dropdown"> */
+/* HTML for the gloss content: <span class = "dropdown_content"> */
+
+
+
+span.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+span.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e0e0d1;
+    min-width: 200px;
+    /*  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    padding: 12px 16px;
+    z-index: 1;
+    text-align: left;
+    border: 3px solid #574C3C;
+    font-size: 50%;
+    font-family: 'Lato', sans-serif;
+}
+
+span.dropdown:hover span.dropdown-content {
+    display: block;
+}
+
+.gloss {
+    color: #4E4F3E;
+    text-decoration: overline;
+}
+
+
+
+
+/* Archive - Gabi's hover-over:
+
+(This version relies on divs instead of spans, which messes with the grid formatting)
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+ul {
+  list-style-type: circle;
+  display: block;
+}
+
+
+ul.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+
+
+div.dropdown:hover ul.dropdown-content {
+    display: block;
+}
+
+ */
