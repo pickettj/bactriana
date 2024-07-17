@@ -40,6 +40,12 @@
         </p>
     </xsl:template>
     
+    <xsl:template match="em">
+        <em>
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>
+    
 
 <!-- Examples Section -->
     
