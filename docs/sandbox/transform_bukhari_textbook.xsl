@@ -19,7 +19,8 @@
             </head>
             <body>
                 <h1>Bukhari Chancery Persian Textbook Development</h1>
-                
+                <xsl:apply-templates mode = "chapter_title"/>
+                               
                 <xsl:apply-templates/>
                 
             </body>
@@ -27,6 +28,14 @@
     </xsl:template>
 
 <!-- Explanation Section -->
+    
+    <xsl:template match="chapter" mode = "chapter_title">
+        <h2>
+            <xsl:value-of select="@id"/>
+        </h2>
+    </xsl:template>
+    
+    
     <xsl:template match="explanation">
         <section>
             <h3>Grammatical Explanation</h3>
@@ -40,7 +49,7 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="em">
+    <xsl:template match="explanation//em">
         <em>
             <xsl:apply-templates/>
         </em>
@@ -86,7 +95,7 @@
         </li>
     </xsl:template>
     
-    <xsl:template match="em">
+    <xsl:template match="examples//em">
         <span class = "gram_emph">
             <xsl:apply-templates/>
         </span>
