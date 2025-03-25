@@ -20,6 +20,12 @@
             <body>
                 <h1>Bukhari Chancery Persian Textbook Development</h1>
                 <xsl:apply-templates mode = "chapter_title"/>
+                <!-- Construct the PDF link -->
+                <p>PDF version of this file:
+                    <a href="{/chapter/@id}.pdf">
+                        <xsl:value-of select="concat(/chapter/@id, '.pdf')"/>
+                    </a>
+                </p>
                                
                 <xsl:apply-templates/>
                 
