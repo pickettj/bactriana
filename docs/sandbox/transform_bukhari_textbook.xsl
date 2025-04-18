@@ -52,10 +52,10 @@
     <xsl:template match="p">
         <p>
             <xsl:apply-templates select="node()[not(self::workflow)]"/>
-            <xsl:if test="workflow">
-                <xsl:apply-templates select="workflow" mode="workflow"/>
-            </xsl:if>
         </p>
+        <xsl:if test="workflow">
+            <xsl:apply-templates select="workflow" mode="workflow"/>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template mode="workflow" match="workflow">
@@ -95,23 +95,23 @@
     </xsl:template>
     
     <xsl:template match="ex/*[not(self::gloss)]">
-        <div class = "{name()}">
+        <div class="{name()}">
             <p>
                 <xsl:value-of select="name()"/><xsl:text>: </xsl:text>
                 <xsl:apply-templates select="node()[not(self::workflow)]"/>
-                <xsl:if test="workflow">
-                    <xsl:apply-templates select="workflow" mode="workflow"/>
-                </xsl:if>
             </p>
+            <xsl:if test="workflow">
+                <xsl:apply-templates select="workflow" mode="workflow"/>
+            </xsl:if>
         </div>
     </xsl:template>
     
     <xsl:template match="gloss">
-        <div class = "gloss">
-            Comments:
-            <ul>
+        <div class="gloss">
+            <h4>Comments:</h4>
+            <div class="gloss-comments">
                 <xsl:apply-templates/>
-            </ul>
+            </div>
         </div>
     </xsl:template>
     
@@ -145,8 +145,16 @@
     <xsl:template match="references">
         <section>
             <h3>References</h3>
+            <ul>
             <xsl:apply-templates/>
+            </ul>
         </section>
+    </xsl:template>
+    
+    <xsl:template match="references/div">
+            <li>
+                <xsl:apply-templates/>
+            </li>
     </xsl:template>
     
     
