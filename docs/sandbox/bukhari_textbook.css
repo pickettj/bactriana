@@ -3,20 +3,16 @@ head {
 }
 
 body {
-
-/*font-family: 'Yrsa', serif;*/
-font-family: 'Assistant', sans-serif;
-background: #f9ffe6;
-margin-left: 4%;
-font-size: 110%;
-
-
+  font-family: 'Assistant', sans-serif;
+  background: #f9ffe6;
+  margin-left: 4%;
+  font-size: 110%;
 }
 
 body {
     display: flex;
-    flex-direction: column; /* Arrange sections vertically */
-    gap: 20px; /* Space between sections */
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -27,16 +23,44 @@ section {
     border-radius: 4px;
 }
 
-
 div.exsec {
-    
     border-style: dotted;
     padding: 20px;
-    
 }
 
-
 span.gram_emph {
-        
-        color: #8B0000
+    color: #8B0000;
+}
+
+/* Workflow items - more subtle styling but distinctive per person */
+ul {
+    border-top: 1px dashed #ccc;
+    margin-top: 12px;
+    padding-top: 8px;
+}
+
+li.JP, li.LS, li.NM {
+    border-left: 4px solid;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 0.95em;
+    font-style: italic;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Person-specific colors - more subtle but still distinctive */
+li.JP {
+    border-color: #8B0000;
+    background-color: rgba(255, 235, 235, 0.7);
+}
+
+li.LS {
+    border-color: #006400;
+    background-color: rgba(235, 255, 235, 0.7);
+}
+
+li.NM {
+    border-color: #00008B;
+    background-color: rgba(235, 235, 255, 0.7);
 }

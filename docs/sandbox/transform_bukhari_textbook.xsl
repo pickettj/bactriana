@@ -51,9 +51,26 @@
     
     <xsl:template match="p">
         <p>
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="node()[not(self::workflow)]"/>
+            <xsl:if test="workflow">
+                <xsl:apply-templates select="workflow" mode="workflow"/>
+            </xsl:if>
         </p>
     </xsl:template>
+    
+    <xsl:template mode="workflow" match="workflow">
+        <ul>
+            <xsl:apply-templates select="item" mode="workflow"/>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template mode="workflow" match="item">
+        <li class="{@who}">
+            <xsl:value-of select="@who"/>: 
+            <xsl:apply-templates/>
+        </li>
+    </xsl:template>
+    
     
     <xsl:template match="explanation//em">
         <em>
@@ -72,8 +89,11 @@
     </xsl:template>
     
     <xsl:template match="ex">
-        <div class = "exsec">
-            <xsl:apply-templates/>
+        <div class="example">
+            <xsl:apply-templates select="node()[not(self::workflow)]"/>
+            <xsl:if test="workflow">
+                <xsl:apply-templates select="workflow" mode="workflow"/>
+            </xsl:if>
         </div>
     </xsl:template>
     
@@ -95,10 +115,13 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="div">
-        <li>
-            <xsl:apply-templates/>
-        </li>
+    <xsl:template match="gloss/div">
+        <div class="gloss-item">
+            <xsl:apply-templates select="node()[not(self::workflow)]"/>
+            <xsl:if test="workflow">
+                <xsl:apply-templates select="workflow" mode="workflow"/>
+            </xsl:if>
+        </div>
     </xsl:template>
     
     <xsl:template match="examples//em">
@@ -106,6 +129,16 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+
+<!-- Historical-Grammatical Explanation Section -->
+    <xsl:template match="elaboration">
+        <section>
+            <h3>Historical-Grammatical Exploration</h3>
+            <xsl:apply-templates/>
+        </section>
+    </xsl:template>
+
+
 
 <!-- References Section -->
     
