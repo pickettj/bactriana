@@ -90,10 +90,7 @@
     
     <xsl:template match="ex">
         <div class="example">
-            <xsl:apply-templates select="node()[not(self::workflow)]"/>
-            <xsl:if test="workflow">
-                <xsl:apply-templates select="workflow" mode="workflow"/>
-            </xsl:if>
+            <xsl:apply-templates/>
         </div>
     </xsl:template>
     
@@ -101,7 +98,10 @@
         <div class = "{name()}">
             <p>
                 <xsl:value-of select="name()"/><xsl:text>: </xsl:text>
-                <xsl:apply-templates/>
+                <xsl:apply-templates select="node()[not(self::workflow)]"/>
+                <xsl:if test="workflow">
+                    <xsl:apply-templates select="workflow" mode="workflow"/>
+                </xsl:if>
             </p>
         </div>
     </xsl:template>
