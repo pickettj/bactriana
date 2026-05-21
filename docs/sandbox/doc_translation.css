@@ -1,0 +1,165 @@
+/* document.css — Persian document parallel text view */
+
+/* ── Reset & base ── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #111;
+    background: #fff;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ── Header ── */
+header {
+    border-bottom: 2px solid #111;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.source-ref {
+    font-size: 0.85rem;
+    color: #444;
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+/* ── Section label ── */
+.section-label,
+.trans-only-label {
+    font-size: 0.75rem;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 0.4rem;
+}
+
+/* ── Original text box (shared by trans-only and parallel sections) ── */
+.original {
+    border: 1px solid #111;
+    padding: 0.75rem 1rem;
+    background: #fafafa;
+    font-family: 'Scheherazade New', 'Noto Naskh Arabic', 'Traditional Arabic', serif;
+}
+
+/* ── Line layout within original box ── */
+.orig-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.orig-line {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+/* Line number: sits in left margin, LTR, fixed width */
+.line-num {
+    font-family: Georgia, serif;
+    font-size: 0.75rem;
+    color: #888;
+    min-width: 1.75rem;
+    text-align: right;
+    flex-shrink: 0;
+    direction: ltr;
+    padding-top: 0.15rem;
+}
+
+/* Line text: RTL, grows to fill remaining width */
+.line-text {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    direction: rtl;
+    text-align: right;
+    flex: 1;
+}
+
+/* ── Transcription-only sections (elevatio, seal) ── */
+.trans-only {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    min-width: 400px;
+}
+
+/* ── Parallel sections ── */
+.parallel-section {
+    margin-bottom: 2.5rem;
+}
+
+.parallel-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* ── Translation column ── */
+.translation {
+    padding: 0.25rem 0;
+}
+
+/* ── Sentence blocks ── */
+.sentence-block {
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px dotted #ccc;
+}
+
+.sentence-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sentence {
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+/* ── Glossed target phrase in translation ── */
+.glossed-target {
+    border-bottom: 1px solid #111;
+    cursor: default;
+}
+
+/* ── Gloss notes ── */
+.gloss-notes {
+    list-style: disc;
+    margin-top: 0.5rem;
+    margin-left: 1.25rem;
+    font-size: 0.875rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.gloss-notes li {
+    margin-bottom: 0.2rem;
+}
+
+.gloss-target {
+    font-style: italic;
+}
+
+.gloss-text {
+    font-family: 'Scheherazade New', 'Noto Naskh Arabic', 'Traditional Arabic', serif;
+    font-size: 1.1rem;
+    direction: rtl;
+    unicode-bidi: embed;
+}
