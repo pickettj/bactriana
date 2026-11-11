@@ -1,0 +1,38 @@
+/* Ensure every element can draw Arabic glyphs; Pango does per-glyph fallback,
+   but naming Arabic-capable families explicitly avoids tofu/blank boxes. */
+body, p, div, span, li, h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, "Helvetica Neue", Arial,
+                 "Amiri", "Scheherazade New", "Geeza Pro", "Noto Naskh Arabic", serif;
+}
+.arabic, .bukh, .fars {
+    font-family: "Amiri", "Scheherazade New", "Geeza Pro", "Noto Naskh Arabic", serif;
+}
+@page { margin: 2.5cm; size: letter; }
+
+/* --- Black & white PDF overrides ---
+   These are USER-origin !important rules, so they beat the document's own
+   (author) colors without editing bukhari_textbook.css. */
+
+/* All text to black, no colored backgrounds. */
+* {
+    color: #000 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+body { background: #fff !important; }
+
+/* Structural rules/borders in gray so layout stays legible in mono. */
+.commentary { border-left: 2px solid #999 !important; }
+hr, table, th, td { border-color: #999 !important; }
+
+/* Links: black, no color; keep them readable in print. */
+a, a:link, a:visited { color: #000 !important; text-decoration: underline !important; }
+
+/* Grammatical emphasis: convey without color — bold instead of a highlight. */
+.gram_emph {
+    color: #000 !important;
+    background: transparent !important;
+    font-weight: bold !important;
+}
+/* Note: WeasyPrint has no CSS `filter`, so images can't be grayscaled in CSS.
+   If you add color images later, convert them to grayscale before embedding. */
